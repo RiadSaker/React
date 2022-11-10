@@ -37,7 +37,7 @@ const MoreForms = (props) => {
         if(val.length >= 5 || val.length==0) {
             setErrorMsgTwo("");
         }else{
-            setErrorMsgTwo("Email must be at least 2 Characters")
+            setErrorMsgTwo("Email must be at least 5 Characters")
         }
     }
 
