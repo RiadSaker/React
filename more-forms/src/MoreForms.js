@@ -17,7 +17,7 @@ const MoreForms = (props) => {
 
     const formMessage = (val) => {
         setFirstName(val);
-        if(val.length >= 2) {
+        if(val.length >= 2 || val.length=0) {
             setErrorMsg("");
         }else{
             setErrorMsg("First name must be at least 2 Characters")
@@ -26,7 +26,7 @@ const MoreForms = (props) => {
 
     const formMessageOne = (val) => {
         setLastName(val);
-        if(val.length >= 2) {
+        if(val.length >= 2 || val.length=0) {
             setErrorMsgOne("");
         }else{
             setErrorMsgOne("Last name must be at least 2 Characters")
@@ -34,7 +34,7 @@ const MoreForms = (props) => {
     }
     const formMessageTwo = (val) => {
         setEmail(val);
-        if(val.length >= 2) {
+        if(val.length >= 5 || val.length=0) {
             setErrorMsgTwo("");
         }else{
             setErrorMsgTwo("Email must be at least 2 Characters")
@@ -43,7 +43,7 @@ const MoreForms = (props) => {
 
     const formMessageThree = (val) => {
         setPassword(val);
-        if(val.length > 8){
+        if(val.length >= 8){
             setErrorMsgThree("");
         }else{
             setErrorMsgThree("Password must be at least 8 characters")
